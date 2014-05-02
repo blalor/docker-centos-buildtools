@@ -9,9 +9,10 @@ RUN yum -y install \
     python-setuptools \
     glibc-static \
     createrepo \
-    s3cmd
+    s3cmd \
+    yum-utils
 
 RUN curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 
 RUN echo "gem: --no-rdoc --no-ri" >> /etc/gemrc
-RUN gem install fpm --version 0.4.42
+RUN gem install fpm --version 1.1.0
