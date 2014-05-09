@@ -10,6 +10,7 @@ RUN yum -y install \
     glibc-static \
     createrepo \
     s3cmd \
+    rpmdevtools \
     yum-utils
 
 RUN curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
